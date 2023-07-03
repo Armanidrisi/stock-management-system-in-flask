@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% block content %}
+<h3>Edit item</h3>
+<form class="my-3" method="POST" action="{{url_for('editItem',id=item.id)}}">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      name="name"
+      placeholder="Enter item name"
+      required
+      value="{{item.name}}"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="stock" class="form-label">Stock</label>
+    <input
+      type="number"
+      class="form-control"
+      id="stock"
+      name="stock"
+      placeholder="Enter item stock"
+      required
+      value="{{item.stock}}"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <textarea
+      class="form-control"
+      id="description"
+      name="description"
+      rows="5"
+      required
+    >
+{{item.description}}</textarea
+    >
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

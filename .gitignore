@@ -1,0 +1,30 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Flask-specific
+instance/
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
+venv/
+env/
+env.bak/
+env2/
+env3/
+
+# Development files
+*.sqlite
+*.db
+
+# Other
+*.swp
+.DS_Store
+
