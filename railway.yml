@@ -1,0 +1,5 @@
+env: python
+build:
+  steps:
+    - run: pip install -r requirements.txt
+start: python run.py
